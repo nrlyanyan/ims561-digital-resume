@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Education</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<style>
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-content {
+    flex: 1;
+}
+
+body {
+    background-color: #f3d8f5;
+    font-family: "Gabarito", sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+/* TABLE STYLING */
+.edu-table {
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+    background: white;
+    box-shadow: 0px 3px 7px rgba(0,0,0,0.15);
+    border: 1px solid #4d0026;
+    margin: 20px auto;
+}
+
+.edu-table th, .edu-table td {
+    border: 1px solid #4d0026;
+    padding: 12px;
+    font-size: 15px;
+}
+
+.edu-table th {
+    background-color: #4d0026;
+    color: white;
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 50px;
+    height: 60px;
+    margin-bottom: 6px;
+}
+
+/* RESPONSIVE TABLE */
+@media(max-width:900px){
+    .edu-table {
+        border: 0;
+    }
+
+    .edu-table thead {
+        display: none; /* hide headers */
+    }
+
+    .edu-table tr {
+        display: block;
+        margin-bottom: 20px;
+        border: 2px solid #4d0026;
+        border-radius: 10px;
+        padding: 10px;
+        background: white;
+    }
+
+    .edu-table td {
+        display: block;
+        text-align: right;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+        font-size: 14px;
+    }
+
+    .edu-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        text-align: left;
+        font-weight: bold;
+        color: #4d0026;
+    }
+
+    .edu-table td:last-child {
+        border-bottom: 0;
+    }
+
+    .logo {
+        width: 40px;
+        height: 50px;
+        margin-bottom: 5px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-social a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+
+    .footer-bottom {
+        font-size: 13px;
+    }
+}
+
+
+footer {
+    background: #4d0026;
+    color: white;
+    margin-top: 60px;
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Urbanist", sans-serif;
+}
+
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    transform: scale(1.2);
+    background: white;
+    color: black;
+}
+
+.footer-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-menu li {
+    margin: 0;
+}
+
+.footer-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.footer-menu li a:hover {
+    color: gold;
+}
+
+.footer-bottom {
+    font-size: 15px;
+    color: white;
+    margin: 0;
+}
+</style>
+
+</head>
+<body bgcolor="#F7D4FA">
+
+<h1><b>EDUCATION</b></h1>
+
+<table class="edu-table" align="center">
+
+    <thead>
+    <tr>
+        <th>Institution</th>
+        <th>Year</th>
+        <th>Programme</th>
+        <th>Result</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td data-label="Institution">
+            <img src="logo1.png" class="logo"><br>
+            Universiti Teknologi MARA (UiTM) Kedah
+        </td>
+        <td data-label="Year">2024 – Current</td>
+        <td data-label="Programme">Bachelor of Information Science (Hons) Library Management (IM260)</td>
+        <td data-label="Result">CGPA: <b>3.55</b><br>GPA: <b>3.56</b></td>
+    </tr>
+
+    <tr>
+        <td data-label="Institution">
+            <img src="logo1.png" class="logo"><br>
+            Universiti Teknologi MARA (UiTM) Kedah
+        </td>
+        <td data-label="Year">2022 – 2024</td>
+        <td data-label="Programme">Diploma in Library Informatics (IM144)</td>
+        <td data-label="Result">CGPA: <b>3.59</b><br>GPA: <b>3.88</b></td>
+    </tr>
+
+    <tr>
+        <td data-label="Institution">
+            <img src="logo2.png" class="logo"><br>
+            Maahad Rahmaniah Kuala Krai (MRKK), Kelantan
+        </td>
+        <td data-label="Year">Jan 2016 – Mar 2021</td>
+        <td data-label="Programme">High School (Form 1 – 6)</td>
+        <td data-label="Result">SPM 2020:<br><b>1A-, 1B+, 2B, 3C+, 2C</b></td>
+    </tr>
+    </tbody>
+</table>
+
+<footer>
+    <div class="footer-social">
+        <a href="https://www.instagram.com/mochiartz_?igsh=MTV6ZmpvZDNuaTI4MQ=="><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@ms.lavender._?_r=1&_t=ZS-921hY6rjD2l"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.linkedin.com/in/nurul-izyan-shamsul-zamdi-4714103a0"><i class="fab fa-linkedin"></i></a>
+        <a href="http://www.youtube.com/@nurulizyan9952"><i class="fab fa-youtube"></i></a>
+        <a href="https://pin.it/Ly3zkRsx3"><i class="fab fa-pinterest"></i></a>
+    </div>
+
+    <ul class="footer-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="personal.html">Personal Details</a></li>
+        <li><a href="work.html">Work Experience</a></li>
+        <li><a href="edu.html">Education</a></li>
+        <li><a href="extracurricular.html">Extracurricular</a></li>
+        <li><a href="skills.html">Skills</a></li>
+    </ul>
+
+    <p class="footer-bottom">
+        Copyright ©2025; Designed by <b>Nurul Izyan</b>
+    </p>
+</footer>
+
+</body>
+</html>

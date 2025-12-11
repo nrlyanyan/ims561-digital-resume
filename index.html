@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Gabarito:wght@400..900&family=Lexend:wght@100..900&family=Pacifico&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="page-wrapper">
+<div class="content">
+
+<div class="wrapper">
+    <div class="box">
+        <div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div>
+
+        <div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div>
+    </div>
+</div>
+
+<h1 class="slide-title">WELCOME TO MY RESUME</h1>
+
+<div class="info-box">
+    
+<div class="text-box">
+    <h1>Hi.</h1>
+
+    <div class="subtext">
+        I am Nurul Izyan,<br>a Bachelor of Information Science (Hons.) Library Management (IM260) student.
+    </div>
+
+    <div class="description">A dedicated and creative individual with a strong foundation in information management, digital tools, and visual communication. Skilled in Microsoft Office and graphic design, I bring adaptability, teamwork, and attention to detail to every project.</div>
+
+    <a href="myframe.html" target="_parent" class="btn">
+        SCOPE MY RESUME
+    </a>
+
+<div class="social-icons">
+    <a href="https://www.instagram.com/mochiartz_?igsh=MTV6ZmpvZDNuaTI4MQ==" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/@ms.lavender._?_r=1&_t=ZS-921hY6rjD2l" target="_blank">
+        <i class="fab fa-tiktok"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/nurul-izyan-shamsul-zamdi-4714103a0/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://pin.it/Ly3zkRsx3" target="_blank">
+        <i class="fab fa-pinterest"></i>
+    </a>
+</div>
+
+</div>
+
+    <div class="profile-container">
+        <img src="me3.jpg" class="profile-pic">
+    </div>
+
+</div>
+
+<footer>
+    <div class="footer-social">
+        <a href="https://www.instagram.com/mochiartz_?igsh=MTV6ZmpvZDNuaTI4MQ=="><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@ms.lavender._?_r=1&_t=ZS-921hY6rjD2l"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.linkedin.com/in/nurul-izyan-shamsul-zamdi-4714103a0"><i class="fab fa-linkedin"></i></a>
+        <a href="http://www.youtube.com/@nurulizyan9952"><i class="fab fa-youtube"></i></a>
+        <a href="https://pin.it/Ly3zkRsx3"><i class="fab fa-pinterest"></i></a>
+    </div>
+
+    <ul class="footer-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="personal.html">Personal Details</a></li>
+        <li><a href="work.html">Work Experience</a></li>
+        <li><a href="edu.html">Education</a></li>
+        <li><a href="extracurricular.html">Extracurricular</a></li>
+        <li><a href="skills.html">Skills</a></li>
+    </ul>
+
+    <p class="footer-bottom">
+        Copyright ©2025; Designed by <b>Nurul Izyan</b>
+    </p>
+</footer>
+
+</div>
+
+
+<style>
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.page-wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1; /* pushes footer down */
+}
+
+    body {
+        margin: 0;
+        background: none;
+        font-family: "Poppins", sans-serif;
+        color: white;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+.slide-title {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  margin-top: 35px;
+  animation: slideBackForth 4s ease-in-out infinite alternate;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+@keyframes slideBackForth {
+  0% { transform: translateX(-40px); }
+  100% { transform: translateX(40px); }
+}
+
+    .wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+        background: linear-gradient(90deg, rgba(128, 0, 96) 0%, rgba(255, 26, 198) 35%, rgba(255, 179, 236) 100%);
+    }
+
+    .box div {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: transparent;
+        border: 6px solid rgba(249, 236, 242, 0.7);
+    }
+
+.box div:nth-child(1){top:12%; left:42%; animation:animate 10s linear infinite;}
+.box div:nth-child(2){top:70%; left:50%; animation:animate 7s linear infinite;}
+.box div:nth-child(3){top:17%; left:6%;  animation:animate 9s linear infinite;}
+.box div:nth-child(4){top:20%; left:60%; animation:animate 10s linear infinite;}
+.box div:nth-child(5){top:67%; left:10%; animation:animate 10s linear infinite;}
+.box div:nth-child(6){top:80%; left:70%; animation:animate 12s linear infinite;}
+.box div:nth-child(7){top:60%; left:80%; animation:animate 15s linear infinite;}
+.box div:nth-child(8){top:32%; left:25%; animation:animate 16s linear infinite;}
+.box div:nth-child(9){top:80%; left:25%; animation:animate 9s linear infinite;}
+.box div:nth-child(10){top:20%; left:80%; animation:animate 5s linear infinite;}
+.box div:nth-child(11){top:15%;left:75%;animation:animate 14s linear infinite;}
+.box div:nth-child(12){top:85%;left:5%;animation:animate 11s linear infinite;}
+.box div:nth-child(13){top:45%;left:90%;animation:animate 13s linear infinite;}
+.box div:nth-child(14){top:5%;left:30%;animation:animate 8s linear infinite;}
+.box div:nth-child(15){top:55%;left:15%;animation:animate 12s linear infinite;}
+.box div:nth-child(16){top:25%;left:5%;animation:animate 15s linear infinite;}
+.box div:nth-child(17){top:75%;left:60%;animation:animate 9s linear infinite;}
+.box div:nth-child(18){top:40%;left:50%;animation:animate 16s linear infinite;}
+.box div:nth-child(19){top:90%;left:40%;animation:animate 10s linear infinite;}
+.box div:nth-child(20){top:10%;left:90%;animation:animate 7s linear infinite;}
+
+
+    @keyframes animate {
+        0% {
+            transform: scale(0) translateY(0) rotate(0);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1.3) translateY(-99px) rotate(360deg);
+            opacity: 0;
+        }
+    }
+
+.info-box {
+    width: 70%;
+    padding: 40px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 18px;
+    color: black;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15); /* soft depth */
+}
+
+
+    .text-box { 
+        margin-left: 20px; 
+        max-width: 500px; 
+	margin-right: 40px; /* ← ADD THIS */
+    }
+
+    h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 90px;
+        margin: 0;
+        color: #111;
+    }
+
+    .subtext {
+        margin-top: 13px;
+        font-size: 15px;
+        font-family: "Funnel Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        color: white;
+    }
+
+    .description {
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 1.5;
+        color: white;
+        max-width: 470px;
+        font-family: "Funnel Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }
+
+    .btn {
+        display: inline-block;
+        background: #660033;
+        padding: 12px 20px;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 4px;
+        text-decoration: none;
+        color: white;
+        margin-top: 10px;
+        transition: 0.3s;
+    }
+
+    .btn:hover { background: #b82e8a; }
+
+    .social-icons { margin-top: 20px; }
+
+    .social-icons a {
+        color: #660033;
+        font-size: 20px;
+        margin-right: 15px;
+        transition: 0.3s;
+        text-decoration: none;
+    }
+
+    .social-icons a:hover { color: #b82e8a; }
+
+    .profile-container {
+        margin-right: 10px;
+    }
+
+    .profile-pic {
+        border: 2px solid #ffffff;
+        border-radius: 10%;
+        padding: 5px;
+        width: 300px;
+        height: 380px;
+        object-fit: cover;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+    }
+
+footer {
+    background: #4d0026;
+    color: white;
+    margin-top: 100px;
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+.footer-social {
+    margin-bottom: 30px;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    transform: scale(1.2);
+    background: white;
+    color: black;
+}
+
+.footer-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.footer-menu li {
+    margin: 0;
+}
+
+.footer-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.footer-menu li a:hover {
+    color: gold;
+}
+
+.footer-bottom {
+    font-size: 15px;
+    color: white;
+    margin: 0;
+}
+
+
+/* Tablets */
+@media (max-width: 992px) {
+
+    .slide-title {
+        font-size: 32px;
+    }
+
+    .info-box {
+        width: 85%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .profile-pic {
+        width: 250px;
+        height: 320px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .info-box {
+        flex-direction: column-reverse;
+        text-align: center;
+        width: 90%;
+        padding: 25px;
+    }
+
+    .text-box {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .profile-container {
+        margin-bottom: 25px;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile-pic {
+        width: 230px;
+        height: 300px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+
+    .slide-title {
+        font-size: 26px;
+        margin-top: 20px;
+    }
+
+    .info-box {
+        flex-direction: column-reverse;
+        width: 85%;
+        padding: 20px;
+    }
+
+    .profile-pic {
+        width: 200px;
+        height: 260px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .subtext {
+        font-size: 14px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-social a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+
+    .footer-bottom {
+        font-size: 13px;
+    }
+}
+
+
+
+</style>
+
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<div class="profile-container">
+    <img src="me2.jpg" class="profile-pic">
+</div>
+
+<div class="audio-frame">
+    <div class="floral-decor left-flower">🌷</div>
+    <div class="floral-decor right-flower">🌷</div>
+
+<div class="info-box">
+
+    <div class="info-row">
+        <div class="name-text">NURUL IZYAN BINTI SHAMSUL ZAMDI</div>
+    </div>
+ 
+    <div class="info-row">
+        <div class="subtitle-text">LIBRARY & INFORMATION SCIENCE STUDENT</div>
+    </div>
+    <div class="info-row">
+        <div class="id-text">2024607704</div>
+    </div>
+</div>
+</div
+</div>
+
+
+
+<div class="audio-player">
+    <div class="audio-container">
+
+
+        <div class="play-btn" id="playBtn">▶</div>
+
+
+        <div class="progress-bar">
+            <div class="progress" id="progressFill"></div>
+        </div>
+
+
+        <div class="volume-icon" id="volumeBtn">🔊</div>
+    </div>
+
+
+    <div class="music-title">Alexis Ffrench – Wishing</div>
+
+
+    <audio id="myAudio" loop autoplay>
+        <source src="wishing - alexis ffrench.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+
+<style>
+
+body {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+
+.audio-frame {
+    position: relative;
+    width: 170px;
+    margin: 0 auto;
+    padding: 20px 20px 25px 20px;
+    background: #fff8fc;
+    border-radius: 18px;
+    box-shadow: 0 0 12px rgba(255, 170, 200, 0.4);
+    border: 2px solid #f3c1d8;
+}
+
+
+.floral-decor {
+    position: absolute;
+    font-size: 28px;
+    opacity: 0.85;
+    animation: floatFlower 3s ease-in-out infinite;
+}
+
+.left-flower {
+    top: -10px;
+    left: -10px;
+}
+
+.right-flower {
+    bottom: -10px;
+    right: -10px;
+}
+
+/* Gentle floating animation */
+@keyframes floatFlower {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
+
+.audio-player {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.audio-container {
+    width: 230px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.play-btn, .volume-icon {
+    width: 28px;
+    height: 28px;
+    background-color: #700d42;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.play-btn:hover, .volume-icon:hover {
+    transform: scale(1.1);
+    background-color: #9a0f5e;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 6px;
+    background: #f6d5e5;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #700d42, #b41c6d, #700d42);
+    background-size: 200% 100%;
+    animation: waveMove 2.5s linear infinite;
+    border-radius: 10px;
+}
+
+@keyframes waveMove {
+    0% { background-position: 0% 0; }
+    100% { background-position: 200% 0; }
+}
+
+.music-title {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #700d42;
+}
+
+
+.music-wrapper:hover .music-title {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+}
+
+.music-btn:hover {
+    background: #8a1554;
+}
+
+.profile-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.profile-pic {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 5px;
+    width: 190px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+.info-box {
+    text-align: center;
+}
+
+.info-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.name-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #700d42;
+    letter-spacing: 0.5px;
+}
+
+.subtitle-text, .id-text {
+    font-size: 14px;
+    color: #700d42;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+
+</style>
+
+
+<script>
+    const audio = document.getElementById("myAudio");
+    const playBtn = document.getElementById("playBtn");
+    const volumeBtn = document.getElementById("volumeBtn");
+    const progressFill = document.getElementById("progressFill");
+
+    // Play / Pause Toggle
+    playBtn.addEventListener("click", () => {
+        if (audio.paused) {
+            audio.play();
+            playBtn.textContent = "⏸"; 
+        } else {
+            audio.pause();
+            playBtn.textContent = "▶";
+        }
+    });
+
+// Update Progress Bar
+audio.addEventListener("timeupdate", () => {
+    if (audio.duration) {
+        const percent = (audio.currentTime / audio.duration) * 100;
+        progressFill.style.width = percent + "%";
+    }
+});
+
+    // Volume Toggle
+    let muted = false;
+    volumeBtn.addEventListener("click", () => {
+        muted = !muted;
+        audio.muted = muted;
+        volumeBtn.textContent = muted ? "🔇" : "🔊";
+    });
+
+
+// Click to seek
+document.querySelector(".progress-bar").addEventListener("click", (e) => {
+    const bar = e.currentTarget;
+    const clickX = e.offsetX;
+    const width = bar.clientWidth;
+
+    const newTime = (clickX / width) * audio.duration;
+    audio.currentTime = newTime;
+});
+
+</script>
+
+
+
+</body>
+</html>

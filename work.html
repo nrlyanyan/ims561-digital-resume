@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Work Experience</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+<h1><b>WORK EXPERIENCE</b></h1>
+
+
+<div class="info-box">
+    <div class="job-position">Librarian Intern</div>
+    <ul class="list-style">
+        <li>Internship at Perpustakaan Tengku Anis (PTA), UiTM Machang</li>
+        <li>4 February – 28 March 2024</li>
+    </ul>
+</div>
+
+
+<div class="gallery">
+
+    <div class="img-box">
+        <img src="me6.jpg" alt="">
+        <div class="caption">PTA Library Instagram</div>
+    </div>
+
+    <div class="img-box">
+        <img src="me12.jpg" alt="">
+        <div class="caption">End of Internship</div>
+    </div>
+
+    <div class="img-box">
+        <img src="me7.jpg" alt="">
+        <div class="caption">Library Counter Area</div>
+    </div>
+
+</div>
+
+
+<div class="modal" id="imageModal">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <img id="modalImage" src="">
+</div>
+
+<div class="gallery">
+
+    <div class="img-box">
+        <img src="me9.jpg" alt="">
+        <div class="caption">Gifts from Vendor</div>
+    </div>
+
+    <div class="img-box">
+        <img src="me10.jpg" alt="">
+        <div class="caption">Book Processing & Cataloging</div>
+    </div>
+
+    <div class="img-box">
+        <img src="me11.jpg" alt="">
+        <div class="caption">Shelf Arrangement Task</div>
+    </div>
+
+</div>
+
+
+<footer>
+    <div class="footer-social">
+        <a href="https://www.instagram.com/mochiartz_?igsh=MTV6ZmpvZDNuaTI4MQ=="><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@ms.lavender._?_r=1&_t=ZS-921hY6rjD2l"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.linkedin.com/in/nurul-izyan-shamsul-zamdi-4714103a0"><i class="fab fa-linkedin"></i></a>
+        <a href="http://www.youtube.com/@nurulizyan9952"><i class="fab fa-youtube"></i></a>
+        <a href="https://pin.it/Ly3zkRsx3"><i class="fab fa-pinterest"></i></a>
+    </div>
+
+    <ul class="footer-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="personal.html">Personal Details</a></li>
+        <li><a href="work.html">Work Experience</a></li>
+        <li><a href="edu.html">Education</a></li>
+        <li><a href="extracurricular.html">Extracurricular</a></li>
+        <li><a href="skills.html">Skills</a></li>
+    </ul>
+
+    <p class="footer-bottom">
+        Copyright ©2025; Designed by <b>Nurul Izyan</b>
+    </p>
+</footer>
+
+
+<style>
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+    body {
+        background-color: #f3d8f5;
+        font-family: "Gabarito", sans-serif;
+        text-align: center;
+        margin: 0;
+    }
+
+    h1 {
+        margin-top: 20px;
+        font-size: 32px;
+    }
+
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 35px;
+    }
+
+    .img-box {
+        text-align: center;
+        width: 260px;
+    }
+
+    .img-box img {
+        width: 260px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: zoom-in;
+    }
+
+    .img-box img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.35);
+    }
+
+    .caption {
+        margin-top: 10px;
+        font-size: 18px;
+        color: #4d0026;
+        font-weight: 600;
+    }
+
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal img {
+        max-width: 80%;
+        max-height: 80%;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 40px;
+        right: 50px;
+        font-size: 40px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .close-btn:hover {
+        color: #ff88c2;
+    }
+
+    .info-box {
+        display: inline-block;
+        background-color: white;
+        border-left: 6px solid #4d0026;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.18);
+        border-radius: 6px;
+        padding: 20px;
+        width: 40%;
+        min-width: 280px;
+        text-align: left;
+    }
+
+    .job-position {
+        font-size: 18px;
+        font-weight: 700;
+        color: #4d0026;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .list-style {
+        line-height: 1.8;
+        margin-left: 15px;
+    }
+
+    .list-style li {
+        font-size: 15px;
+        color: #333;
+    }
+
+footer {
+    background: #4d0026;
+    color: white;
+    margin-top: 60px;
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+.footer-social {
+    margin-bottom: 30px;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    transform: scale(1.2);
+    background: white;
+    color: black;
+}
+
+.footer-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.footer-menu li {
+    margin: 0;
+}
+
+.footer-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.footer-menu li a:hover {
+    color: gold;
+}
+
+.footer-bottom {
+    font-size: 15px;
+    color: white;
+    margin: 0;
+}
+
+
+/* Tablet screens */
+@media (max-width:900px){
+    .info-box {
+        width: 60%;
+    }
+
+    .gallery {
+        gap: 20px;
+    }
+
+    .img-box {
+        width: 45%;
+    }
+
+    .img-box img {
+        height: 150px;
+    }
+
+    .caption {
+        font-size: 16px;
+    }
+}
+
+/* Small phones */
+@media (max-width:480px){
+    h1 {
+        font-size: 26px;
+    }
+
+    .info-box {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .gallery {
+        gap: 15px;
+    }
+
+    .img-box {
+        width: 100%;
+    }
+
+    .img-box img {
+        height: 180px;
+    }
+
+    .caption {
+        font-size: 14px;
+    }
+
+    .close-btn {
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-social a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+
+    .footer-bottom {
+        font-size: 13px;
+    }
+
+}
+
+
+
+</style>
+
+
+
+<script>
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    const closeBtn = document.getElementById("closeModal");
+    const galleryImages = document.querySelectorAll(".gallery img");
+
+    galleryImages.forEach(img => {
+        img.addEventListener("click", function() {
+            modal.style.display = "flex";
+            modalImg.src = this.src;
+        });
+    });
+
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    modal.onclick = function(e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

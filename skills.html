@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Skills</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body {
+    background-color: #f3d8f5;
+    font-family: "Gabarito", sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+.skills-container {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.skills-box {
+    background: white;
+    border-left: 5px solid #4d0026;
+    border-radius: 6px;
+    padding: 20px;
+    width: 40%;
+    min-width: 280px; /* responsive min-width */
+    text-align: left;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.15);
+}
+
+.skills-title {
+    background-color: #4d0026;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.skills-list {
+    margin-left: 25px;
+    line-height: 1.8;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+footer {
+    background: #4d0026;
+    color: white;
+    margin-top: 50px;
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Urbanist", sans-serif;
+}
+
+.footer-social {
+    margin-bottom: 30px;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    transform: scale(1.2);
+    background: white;
+    color: black;
+}
+
+.footer-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.footer-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.footer-menu li a:hover {
+    color: gold;
+}
+
+.footer-bottom {
+    font-size: 15px;
+    color: white;
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        gap: 20px;
+        width: 90%;
+    }
+
+    .skills-box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-social a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+
+    .footer-bottom {
+        font-size: 13px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1><b>SKILLS</b></h1>
+
+<div class="skills-container">
+
+    <div class="skills-box">
+        <div class="skills-title">SOFTWARE</div>
+        <ul class="skills-list">
+            <li>Microsoft Word</li>
+            <li>Microsoft PowerPoint</li>
+            <li>Microsoft Excel</li>
+            <li>Graphic Design</li>
+        </ul>
+    </div>
+
+    <div class="skills-box">
+        <div class="skills-title">SOFT SKILLS</div>
+        <ul class="skills-list">
+            <li>Adaptability</li>
+            <li>Teamwork</li>
+            <li>Creativity</li>
+            <li>Drawing</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <div class="footer-social">
+        <a href="https://www.instagram.com/mochiartz_?igsh=MTV6ZmpvZDNuaTI4MQ=="><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@ms.lavender._?_r=1&_t=ZS-921hY6rjD2l"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.linkedin.com/in/nurul-izyan-shamsul-zamdi-4714103a0"><i class="fab fa-linkedin"></i></a>
+        <a href="http://www.youtube.com/@nurulizyan9952"><i class="fab fa-youtube"></i></a>
+        <a href="https://pin.it/Ly3zkRsx3"><i class="fab fa-pinterest"></i></a>
+    </div>
+
+    <ul class="footer-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="personal.html">Personal Details</a></li>
+        <li><a href="work.html">Work Experience</a></li>
+        <li><a href="edu.html">Education</a></li>
+        <li><a href="extracurricular.html">Extracurricular</a></li>
+        <li><a href="skills.html">Skills</a></li>
+    </ul>
+
+    <p class="footer-bottom">
+        Copyright ©2025; Designed by <b>Nurul Izyan</b>
+    </p>
+</footer>
+
+</body>
+</html>
